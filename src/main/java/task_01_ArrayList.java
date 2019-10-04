@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class task_01 {
+public class task_01_ArrayList {
     /**
      * 1. Create ArrayList and print it.
      */

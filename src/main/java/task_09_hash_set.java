@@ -6,7 +6,7 @@ import java.util.HashSet;
  * Create HashSet<Integer> and add all unique numbers from the ArrayList."
  */
 
-public class task_09 {
+public class task_09_hash_set {
 
     public static void main(String[] args) {
         int range = 100;

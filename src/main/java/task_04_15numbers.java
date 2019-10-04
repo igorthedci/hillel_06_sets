@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class task_04_15numbers {
     /**
      * Create an array of 15 random integers from the segment [0;   9].
@@ -15,6 +17,15 @@ public class task_04_15numbers {
         }
         // print the array
         System.out.println("Array of 15 random numbers:");
-        System.out.println(arr15.toString());
+        System.out.println(Arrays.toString(arr15));
+
+        // count even numbers
+        int count = 0;
+        for (int i : arr15) {
+            if (i % 2 == 1) {
+                count++;
+            }
+        }
+        System.out.println("The number of even number is " + count);
     }
 }

@@ -25,8 +25,8 @@ public class task_10_day_of_week {
 
         DayWeek theDay;
 
-        switch (theDay) {
-
-        }
+//        switch (theDay) {
+//            default:
+//        }
     }
 }

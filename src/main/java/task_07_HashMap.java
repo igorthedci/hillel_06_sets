@@ -35,12 +35,9 @@ public class task_07_HashMap {
         fruitsMap.put("potato", "vegetable");
         fruitsMap.put("carrot", "vegetable");
 
-        System.out.println("\nPRINT NO sorting");
+        System.out.println("\nPRINT HASHMAP FRUITS (NO sorting)");
         for (String aKey: fruitsMap.keySet()) {
             System.out.println(aKey + " - " + fruitsMap.get(aKey));
-        };
-
-        System.out.println("\nSORTING by key");
-
+        }
     }
 }

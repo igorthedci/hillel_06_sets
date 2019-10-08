@@ -1,4 +1,4 @@
-import java.util.HashMap;
+import java.util.*;
 
 public class task_08_vegetables {
     /**
@@ -20,7 +20,6 @@ public class task_08_vegetables {
      */
     public static void main(String[] args) {
         HashMap<String, String> fruitsMap = new HashMap<String, String>();
-        String aValue;
 
         // fill the map with samples
         fruitsMap.put("watermelon", "berry");
@@ -34,8 +33,28 @@ public class task_08_vegetables {
         fruitsMap.put("potato", "vegetable");
         fruitsMap.put("carrot", "vegetable");
 
-        System.out.println("\nPRINT VEGETABLES");
-        for (String aKey : fruitsMap.keySet()) {
+        // Map.Entry
+        System.out.println("\nMAP.ENTRY");
+
+        for (Map.Entry<String, String> item : fruitsMap.entrySet()) {
+            String aKey = item.getKey();
+            String aValue = item.getValue();
+            if (aValue == "vegetable") {
+                System.out.println(aKey + " - " + aValue);
+            }
+        }
+
+
+        // ITERATOR
+        System.out.println("\nITERATOR");
+
+        Set<String> allKeys = fruitsMap.keySet();
+        Iterator<String> slider = allKeys.iterator();
+        String aValue;
+        String aKey;
+
+        while(slider.hasNext()) {
+            aKey = slider.next();
             aValue = fruitsMap.get(aKey);
             if (aValue == "vegetable") {
                 System.out.println(aKey + " - " + aValue);

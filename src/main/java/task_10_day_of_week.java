@@ -1,3 +1,5 @@
+import java.time.DayOfWeek;
+import java.time.LocalDate;
 import java.util.Date;
 
 public class task_10_day_of_week {
@@ -10,23 +12,21 @@ public class task_10_day_of_week {
      * ..."
      * 1) Use switch(day of the week) to pass the day of the week.
      */
-    enum DayWeek {
-        SUNDAY,
-        MONDAY,
-        TUESDAY,
-        WEDNESDAY,
-        THURSDAY,
-        FRIDAY,
-        SATURDAY
-    }
+// the ENUM is defined as DayOfWeek
+//    enum DayWeek {
+//        SUNDAY,
+//        MONDAY,
+//        TUESDAY,
+//        WEDNESDAY,
+//        THURSDAY,
+//        FRIDAY,
+//        SATURDAY
+//    }
     public static void main(String[] args) {
-        Date today = new Date();
-        System.out.println(today);
+        LocalDate today = LocalDate.now();
+        DayOfWeek aDay = today.getDayOfWeek();
 
-        DayWeek theDay;
-
-        switch (theDay) {
-
-        }
+        System.out.println("Today is " + today);
+        System.out.println(aDay + " - " + aDay.getValue());
     }
 }
